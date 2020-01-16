@@ -2,6 +2,7 @@ import React from 'react';
 import './style.css'
 import ListItem from './ListItem'
 import todosData from './todosData'
+import Features from './Features'
 
 
 class App extends React.Component {
@@ -49,9 +50,10 @@ class App extends React.Component {
       handleChange={this.handleChange} 
     />)
     return (
-        <div className="todo-list">
-            {todo}
-        </div>
+      <div className="todo-list">
+        <Features/>
+        {todo}
+      </div>
     )
   }
 }
